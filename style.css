@@ -1,0 +1,309 @@
+/*
+Theme Name: mono c0ffee bootstrap v1
+Theme URI: https://mono.coffee
+Author URI: https://mono.coffee/
+Description: Internal bootstrap theme.
+Requires at least: 5.0.0
+Requires PHP: 7.0.0
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monocoffee_bootstrap
+*/
+
+:root {
+    --main-accent: #A22522;
+    --secondary-accent: #0D2C54;
+    --third-accent: #0D2C54;
+    --fourth-accent: #0D2C54
+    --background-color: #F5F3F5;
+    --main-font-color: #000;
+    --font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.1;
+    background-color: var(--background-color);
+    color: var(--main-font-color);
+}
+
+h1, h2, h3 {
+    color: var(--main-accent);
+}
+
+h1 {
+    font-size: 3.75em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.4em;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+h3 {
+    font-size: 2.25em;
+    padding-bottom: 34px;
+    padding-top: 20px;
+}
+
+p {
+    padding-bottom: 1em;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.wp-block-image {
+    margin-bottom: 0;
+}
+
+.wp-block-image img {
+    height: auto;
+}
+
+.site-logo {
+    height: auto;
+    max-height: 150px;
+    width: auto;
+    max-width: 500px;
+}
+
+.entry {
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+.registration-form form {
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding: 39px 48px;
+}
+
+.registration-form form h4 {
+    color: var(--third-accent);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 35px 0 45px;
+}
+
+.registration-form form input:not([type="checkbox"]):not([type="submit"]),
+.download-form form input:not([type="checkbox"]):not([type="submit"]) {
+    background-color: #E4ECF2;
+    width: 90%;
+    border-radius: 31px;
+    border: 1px solid var(--background-color);
+    padding: 10px 20px;
+    font-size: 17px;
+    margin: 0 auto 1em;
+}
+
+.caldera-grid label {
+    font-weight: 400 !important;
+    font-size: 1em;
+    color: var(--third-accent);
+}
+
+.caldera-grid .registration-submit input {
+    background: var(--main-accent) url("assets/img/arrow.svg") no-repeat 92% center;
+    background-size: auto 70%;
+    border-radius: 46px;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 32px;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.caldera-forms-consent-field-agreement,
+.caldera-marketing-aggrement {
+    font-size: 16px;
+}
+
+.caldera-grid {
+    position: relative;
+}
+
+div[id^="caldera_notices_"] {
+    position: absolute;
+    bottom: -5%;
+    left: -55px;
+    z-index: 2;
+    width: 100%;
+    margin-left: 30px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    box-shadow: -2px 1px 66px #0000004f;
+}
+
+div[id^="caldera_notices_"] .alert-success::before {
+    display: block;
+    content: "Sukces!";
+    font-size: 17px;
+    color: var(--third-accent);
+    background: url('assets/img/success_lad.png') no-repeat bottom center;
+    background-size: auto 80%;
+    padding-bottom: 180px;
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+}
+
+div[id^="caldera_notices_"] .alert-success {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.consent-field-about p,
+.marketing-field-about p {
+    font-size: 14px;
+    color: #000;
+}
+
+.caldera-forms-consent-field a,
+.consent-field-about,
+.marketing-field-about {
+    display: none;
+}
+
+.caldera-forms-consent-field span::after {
+    content: '▶';
+    margin-left: 10px;
+}
+
+main.single-page {
+    background-size: cover;
+}
+
+.single-page .content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.single-page h1 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.single-page .wp-block-columns {
+    margin-top: 30px;
+}
+
+.download-form {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 26px;
+}
+
+.download-form h2 {
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.download-form .data-processing,
+.download-form .caldera-marketing-aggrement {
+    padding: 0 20px;
+}
+
+footer {
+    background: var(--background-color);
+    color: var(--main-font-color);
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1364px;
+    margin: 0 auto;
+}
+
+.footer-column strong {
+    font-size: 24px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: var(--main-accent);
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-social li {
+    display: inline-block;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 650px) {
+    h2 {
+        font-size: 24px;
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+
+    .entry {
+        width: 90%;
+    }
+
+    .registration-form form {
+        padding: 39px 20px;
+    }
+
+    .caldera-grid .registration-submit input {
+        font-size: 25px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        width: 90%
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+    
+    footer .menu {
+        text-align: center;
+    }
+
+    footer .menu li + li::before {
+        display: none;
+    }
+
+}
