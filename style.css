@@ -70,11 +70,15 @@ a {
 }
 
 .wp-block-image {
-    margin-bottom: 0;
+    margin-bottom: 2em;
 }
 
 .wp-block-image img {
     height: auto;
+}
+
+.wp-block-columns {
+    margin-top: 2em;
 }
 
 .site-header {
