@@ -31,4 +31,19 @@
             </ul>
         </nav>
         <?php endif; ?>
+        <?php if ( has_nav_menu( 'lang' )) : ?>
+        <nav>
+            <ul class="lang-menu">
+                <?php
+                wp_nav_menu(
+                    array(
+                        'container' => '',
+                        'items_wrap' => '%3$s',
+                        'theme_location' => 'lang',
+                    )
+                );
+                ?>
+            </ul>
+        </nav>
+        <?php endif; ?>
 </header>

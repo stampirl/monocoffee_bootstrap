@@ -77,11 +77,35 @@ a {
     height: auto;
 }
 
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header > * + * {
+    margin-left: 20px;
+}
+
 .site-logo {
+    flex: 0 0 20%;
+}
+
+.site-logo img {
     height: auto;
     max-height: 150px;
     width: auto;
     max-width: 500px;
+}
+
+.primary-menu,
+.lang-menu {
+    display: flex;
+    list-style: none;
+}
+
+.primary-menu li {
+    margin-right: 20px;
 }
 
 .entry {

@@ -94,6 +94,7 @@ add_action( 'wp_enqueue_scripts', 'monocoffee_bootstrap_register_scripts' );
 function monocoffee_bootstrap_menus() {
     $locations = [
         'primary' => __( 'Main Menu', 'monocoffee_bootstrap'),
+        'lang' => __('Lang Menu', 'monocoffe_bootstrap'),
         'footer' => __( 'Footer Menu', 'monocoffee_bootstrap'),
     ];
 
