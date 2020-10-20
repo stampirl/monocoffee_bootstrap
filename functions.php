@@ -45,29 +45,6 @@ function monocoffee_bootstrap_theme_support() {
 	);
 
     load_theme_textdomain( 'monocoffee_bootstrap' );
-    // Editor Color Palette
-    add_theme_support( 'editor-color-palette', array(
-        array(
-            'name'  => __( 'White', 'textdomain' ),
-            'slug'  => 'white',
-            'color'	=> '#FFFFFF',
-        ),
-        array(
-                'name'	=> __( 'Black', 'textdomain' ),
-                'slug'	=> 'black',
-                'color'	=> '#000000',
-        ),
-        array(
-                'name'  => __( 'Orange', 'textdomain' ),
-                'slug'  => 'orange',
-                'color'	=> '#FF8300',
-        ),
-        array(
-                'name'  => __( 'Red', 'textdomain' ),
-                'slug'  => 'red',
-                'color'	=> '#D9000D',
-        ),
-    ) );
 
     add_theme_support( 'title-tag' );
 }
