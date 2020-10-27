@@ -12,7 +12,4 @@ if(have_posts()):
         </main>
 <?php endwhile;
 endif;
-
-wp_footer(); ?>
-</body>
-</html>
+get_footer(); ?>
