@@ -149,7 +149,6 @@ a {
 .caldera-grid label {
     font-weight: 400 !important;
     font-size: 1em;
-    color: var(--third-accent);
 }
 
 .caldera-grid .registration-submit input {
