@@ -103,6 +103,10 @@ a {
     max-width: 500px;
 }
 
+.mobile-menu-button {
+    display: none;
+}
+
 .primary-menu,
 .lang-menu {
     display: flex;
@@ -262,6 +266,33 @@ footer {
         font-size: 24px;
         padding-top: 35px;
         padding-bottom: 10px;
+    }
+
+    .site-header .container {
+        justify-content: space-around;
+    }
+
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .mobile-menu-button img {
+        width: 30px;
+        height: auto;
+    }
+
+    .site-header .primary-menu.menu-open {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        height: 100vh;
+        padding: 30px;
+    }
+
+    .site-header .primary-menu {
+        display: none;
     }
 
     .entry {

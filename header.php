@@ -6,6 +6,9 @@
 	</div>
 	<?php if ( has_nav_menu( 'primary' )) : ?>
 	    <nav role="navigation">
+			<div class="mobile-menu-button">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/square.svg" alt="Hamburger menu">
+			</div>
 		<ul class="primary-menu">
 		    <?php wp_nav_menu(
 			array(
