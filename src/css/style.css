@@ -1,0 +1,333 @@
+/*
+Theme Name: mono c0ffee bootstrap v1
+Theme URI: https://mono.coffee
+Author URI: https://mono.coffee/
+Description: Internal bootstrap theme.
+Requires at least: 5.0.0
+Requires PHP: 7.0.0
+Version: 1.1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: monocoffee_bootstrap
+*/
+
+:root {
+	--main-accent: #a22522;
+	--secondary-accent: #0d2c54;
+	--third-accent: #0d2c54;
+	--fourth-accent: #0d2c54;
+	--background-color: #f5f3f5;
+	--main-font-color: #000;
+	--font-family: "Open Sans", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--font-family);
+	font-size: 16px;
+	line-height: 1.1;
+	background-color: var(--background-color);
+	color: var(--main-font-color);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--main-accent);
+}
+
+h1 {
+	font-size: 3.75em;
+	font-weight: 800;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 3.4em;
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
+
+h3 {
+	font-size: 2.25em;
+	padding-bottom: 34px;
+	padding-top: 20px;
+}
+
+p {
+	padding-bottom: 1em;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-font-color);
+}
+
+.wp-block-image {
+	margin-bottom: 2em;
+}
+
+.wp-block-image img {
+	height: auto;
+}
+
+.wp-block-columns {
+	margin-top: 2em;
+}
+
+.site-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.site-header .container > * + * {
+	margin-left: 20px;
+}
+
+.site-logo {
+	flex: 0 0 20%;
+}
+
+.site-logo img {
+	height: auto;
+	max-height: 150px;
+	width: auto;
+	max-width: 500px;
+}
+
+.mobile-menu-button {
+	display: none;
+}
+
+.primary-menu,
+.lang-menu {
+	display: flex;
+	list-style: none;
+}
+
+.primary-menu li {
+	margin-right: 20px;
+}
+
+.content {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+.registration-form form {
+	background-color: #fff;
+	color: #000;
+	border-radius: 15px;
+	padding: 39px 48px;
+}
+
+.registration-form form h4 {
+	color: var(--third-accent);
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 35px 0 45px;
+}
+
+.registration-form form input:not([type="checkbox"]):not([type="submit"]),
+.download-form form input:not([type="checkbox"]):not([type="submit"]) {
+	background-color: #e4ecf2;
+	width: 90%;
+	border-radius: 31px;
+	border: 1px solid var(--background-color);
+	padding: 10px 20px;
+	font-size: 17px;
+	margin: 0 auto 1em;
+}
+
+.caldera-grid label {
+	font-weight: 400 !important;
+	font-size: 1em;
+}
+
+.caldera-grid .registration-submit input {
+
+	/* background: var(--main-accent) url("assets/img/arrow.svg") no-repeat 92% center; */
+	background-size: auto 70%;
+	border-radius: 46px;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 32px;
+	width: 85%;
+	display: block;
+	margin: 0 auto;
+}
+
+.caldera-forms-consent-field-agreement,
+.caldera-marketing-aggrement {
+	font-size: 16px;
+}
+
+.caldera-grid {
+	position: relative;
+}
+
+.consent-field-about p,
+.marketing-field-about p {
+	font-size: 14px;
+	color: #000;
+}
+
+.caldera-forms-consent-field a,
+.consent-field-about,
+.marketing-field-about {
+	display: none;
+}
+
+.caldera-forms-consent-field span::after {
+	content: "▶";
+	margin-left: 10px;
+}
+
+main.single-page {
+	background-size: cover;
+}
+
+.single-page .content {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.single-page .wp-block-columns {
+	margin-top: 30px;
+}
+
+.download-form {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 26px;
+}
+
+.download-form h2 {
+	font-size: 24px;
+	color: #000;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.download-form .data-processing,
+.download-form .caldera-marketing-aggrement {
+	padding: 0 20px;
+}
+
+footer {
+	background: var(--background-color);
+	color: var(--main-font-color);
+	font-size: 18px;
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.footer-columns {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1364px;
+	margin: 0 auto;
+}
+
+.footer-column strong {
+	font-size: 24px;
+}
+
+.footer-column a {
+	text-decoration: none;
+	color: var(--main-accent);
+}
+
+.footer-column ul {
+	list-style: none;
+}
+
+.footer-social li {
+	display: inline-block;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+@media screen and (max-width: 650px) {
+
+	h2 {
+		font-size: 24px;
+		padding-top: 35px;
+		padding-bottom: 10px;
+	}
+
+	.site-header .container {
+		justify-content: space-around;
+	}
+
+	.mobile-menu-button {
+		display: block;
+	}
+
+	.mobile-menu-button img {
+		width: 30px;
+		height: auto;
+	}
+
+	.site-header .primary-menu.menu-open {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #fff;
+		height: 100vh;
+		padding: 30px;
+	}
+
+	.site-header .primary-menu {
+		display: none;
+	}
+
+	.entry {
+		width: 90%;
+	}
+
+	.registration-form form {
+		padding: 39px 20px;
+	}
+
+	.caldera-grid .registration-submit input {
+		font-size: 25px;
+		padding: 10px;
+		width: 90%;
+	}
+
+	.footer-columns {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.footer-social {
+		text-align: center;
+	}
+
+	footer .menu {
+		text-align: center;
+	}
+
+	footer .menu li + li::before {
+		display: none;
+	}
+
+}
